@@ -11,12 +11,12 @@
     android:paddingTop="28dp"
     android:paddingBottom="20dp">
 
-    <!-- Header -->
+    <!-- Header (No change) -->
     <TextView
         android:id="@+id/tvAppTitle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="BlueNotes"
+        android:text="BrainDump"
         android:textSize="22sp"
         android:textStyle="bold"
         android:textColor="#052A4A"
@@ -28,7 +28,7 @@
         android:id="@+id/tvSubtitle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Quick notes, synced to your device"
+        android:text="Where thoughts live."
         android:textSize="14sp"
         android:textColor="#4B6B8A"
         android:layout_marginTop="6dp"
@@ -36,7 +36,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <!-- New Note button -->
+    <!-- New Note button (No change) -->
     <Button
         android:id="@+id/btnNewNote"
         android:layout_width="0dp"
@@ -50,7 +50,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <!-- Simple search placeholder -->
+    <!-- Search placeholder (No change) -->
     <EditText
         android:id="@+id/etSearch"
         android:layout_width="0dp"
@@ -66,7 +66,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <!-- Sample notes list (static placeholder cards) -->
+    <!-- MODIFIED: This ScrollView now contains an empty LinearLayout to be populated by Java code -->
     <ScrollView
         android:id="@+id/scrollNotes"
         android:layout_width="0dp"
@@ -79,81 +79,17 @@
         android:layout_marginTop="12dp">
 
         <LinearLayout
+            android:id="@+id/notes_list_container"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <!-- Note card 1 -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:background="@android:color/white"
-                android:padding="14dp"
-                android:elevation="2dp"
-                android:layout_marginBottom="12dp">
+            <!-- Note cards will be added here from MainActivity.java -->
 
-                <TextView
-                    android:id="@+id/noteTitle1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Shopping list"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    android:textColor="#052A4A"/>
-
-                <TextView
-                    android:id="@+id/noteSnippet1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Milk, Eggs, Honey, Olive oil..."
-                    android:textSize="14sp"
-                    android:textColor="#4B6B8A"
-                    android:layout_marginTop="6dp"/>
-            </LinearLayout>
-
-            <!-- Note card 2 -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:background="@android:color/white"
-                android:padding="14dp"
-                android:elevation="2dp"
-                android:layout_marginBottom="12dp">
-
-                <TextView
-                    android:id="@+id/noteTitle2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Meeting notes"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    android:textColor="#052A4A"/>
-
-                <TextView
-                    android:id="@+id/noteSnippet2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Discuss Q3 roadmap and deliverables..."
-                    android:textSize="14sp"
-                    android:textColor="#4B6B8A"
-                    android:layout_marginTop="6dp"/>
-            </LinearLayout>
-
-            <!-- Placeholder to indicate more -->
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="— End of sample notes —"
-                android:textColor="#7B94AE"
-                android:gravity="center"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="12dp"/>
         </LinearLayout>
     </ScrollView>
 
-    <!-- Footer / small hint -->
+    <!-- Footer (No change) -->
     <TextView
         android:id="@+id/tvFooter"
         android:layout_width="0dp"

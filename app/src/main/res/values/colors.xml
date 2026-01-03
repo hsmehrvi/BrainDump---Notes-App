@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <!-- Main App Theme Colors -->
+    <color name="md_theme_primary">#0D6EFD</color> <!-- A strong, accessible blue -->
+    <color name="md_theme_onPrimary">#FFFFFF</color> <!-- White text on primary color -->
+    <color name="md_theme_background">#F6FAFF</color> <!-- A very light blue-gray background -->
+    <color name="md_theme_onBackground">#191C1E</color> <!-- Dark text for high contrast on background -->
+    <color name="md_theme_surface">#FFFFFF</color> <!-- White for card backgrounds -->
+    <color name="md_theme_onSurface">#191C1E</color> <!-- Dark text for cards -->
+    <color name="md_theme_onSurfaceVariant">#42474E</color> <!-- A secondary, lighter text color -->
+
+    <!-- Specific UI element colors -->
+    <color name="text_primary">#052A4A</color> <!-- For titles and important text -->
+    <color name="text_secondary">#4B6B8A</color> <!-- For subtitles and body text -->
+    <color name="text_hint">#7B94AE</color> <!-- For hints in EditText fields -->
+    <color name="input_field_background">#FFFFFF</color>
+    <color name="input_field_stroke">#B0C4DE</color>
 </resources>

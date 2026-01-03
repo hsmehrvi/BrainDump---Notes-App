@@ -1,64 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F6FAFF"
-    android:paddingStart="20dp"
-    android:paddingEnd="20dp"
-    android:paddingTop="28dp"
-    android:paddingBottom="20dp">
+    android:background="@color/md_theme_background"
+    android:fillViewport="true"
+    android:padding="28dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="6dp">
+        android:gravity="center_horizontal">
 
         <TextView
-            android:id="@+id/tvTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Welcome back"
             android:textSize="22sp"
             android:textStyle="bold"
-            android:textColor="#052A4A"
-            android:layout_marginTop="6dp"
-            android:layout_marginBottom="6dp"/>
+            android:textColor="@color/text_primary"
+            android:gravity="center"
+            android:paddingTop="40dp"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Sign in to access your notes"
             android:textSize="14sp"
-            android:textColor="#4B6B8A"
-            android:layout_marginBottom="12dp"/>
+            android:textColor="@color/text_secondary"
+            android:gravity="center"
+            android:layout_marginTop="6dp"/>
 
         <EditText
-            android:id="@+id/etEmail"
+            android:id="@+id/edtEmail"
+            style="@style/Widget.App.EditText"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
             android:hint="Email"
             android:inputType="textEmailAddress"
-            android:paddingStart="12dp"
-            android:paddingEnd="12dp"
-            android:background="@android:color/white"
-            android:layout_marginTop="6dp"
-            android:layout_marginBottom="6dp"
-            android:elevation="2dp"/>
+            android:imeOptions="actionNext" />
 
         <EditText
-            android:id="@+id/etPassword"
+            android:id="@+id/edtPassword"
+            style="@style/Widget.App.EditText"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
             android:hint="Password"
             android:inputType="textPassword"
-            android:paddingStart="12dp"
-            android:paddingEnd="12dp"
-            android:background="@android:color/white"
-            android:layout_marginTop="6dp"
-            android:layout_marginBottom="6dp"
-            android:elevation="2dp"/>
+            android:imeOptions="actionDone" />
 
         <TextView
             android:id="@+id/tvForgot"
@@ -66,9 +59,10 @@
             android:layout_height="wrap_content"
             android:text="Forgot password?"
             android:textSize="14sp"
-            android:textColor="#0D6EFD"
+            android:textColor="@color/md_theme_primary"
             android:layout_gravity="end"
-            android:layout_marginTop="8dp"/>
+            android:layout_marginTop="12dp"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btnLogin"
@@ -76,9 +70,7 @@
             android:layout_height="52dp"
             android:text="Login"
             android:textAllCaps="false"
-            android:backgroundTint="#0D6EFD"
-            android:textColor="#FFFFFF"
-            android:layout_marginTop="18dp"/>
+            android:layout_marginTop="24dp"/>
 
         <TextView
             android:id="@+id/tvOr"
@@ -86,22 +78,18 @@
             android:layout_height="wrap_content"
             android:text="OR"
             android:gravity="center"
-            android:textColor="#7B94AE"
-            android:layout_marginTop="14dp"/>
+            android:textColor="@color/text_hint"
+            android:layout_marginTop="16dp" />
 
         <Button
             android:id="@+id/btnSignup"
+            style="?attr/materialButtonOutlinedStyle"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="52dp"
             android:text="Create account"
             android:textAllCaps="false"
-            android:backgroundTint="#FFFFFF"
-            android:textColor="#0D6EFD"
-            android:layout_marginTop="12dp"
-            android:elevation="0dp"/>
+            android:textColor="@color/md_theme_primary"
+            android:layout_marginTop="16dp"/>
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="24dp"/>
     </LinearLayout>
 </ScrollView>
